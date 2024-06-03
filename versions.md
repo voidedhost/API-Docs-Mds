@@ -6,8 +6,8 @@ To access a specific version of the API, you can include the version number in t
 
 | Version | Status       | Default |
 |---------|--------------|---------|
-| 1       | Deprecated   | ✓       |
 | 2       | Available    |         |
+| 1       | Deprecated   | ✓       |
 
 ## Tags
 
