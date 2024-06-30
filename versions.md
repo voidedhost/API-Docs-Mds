@@ -11,5 +11,7 @@ To access a specific version of the API, you can include the version number in t
 
 ## Tags
 
-- **Deprecated:** This version is no longer actively maintained and is considered deprecated. It is the default version if no version is specified in the URL.
+- **Default:** It is the default version if no version is specified in the URL.
+
+- **Deprecated:** This version is no longer actively maintained and is considered deprecated.
 - **Current:** This is the current version of our API and is actively supported and maintained.
