@@ -1,4 +1,4 @@
-# Api Endpoints
+# Api Endpoints (V2)
 
 ## Users
 
@@ -13,6 +13,12 @@ Parameters:
 
 ### User Images
 `/users/{userId}/images`
+
+Parameters:
+- `userId`: The user ID
+
+### User Files
+`/users/{userId}/files`
 
 Parameters:
 - `userId`: The user ID
@@ -61,6 +67,12 @@ Parameters:
 Parameters:
 - `userId`: The user ID
 
+### User Files Stream
+`/users/{userId}/files/stream`
+
+Parameters:
+- `userId`: The user ID
+
 ### User Pastes Stream
 `/users/{userId}/pastes/stream`
 
@@ -98,12 +110,18 @@ Parameters:
 Parameters:
 - `userId`: The user ID
 
+### User Usernames
+`/users/{userId}/usernames`
+
+Parameters:
+- `userId`: The user ID
+
 ## Badges
 
 ### Badges
 `/badges`
 
-### Redeem Badge Code
+### Badge Code Redeem
 `/badges/redeem`
 
 ## Languages
@@ -127,8 +145,23 @@ Parameters:
 ### Images
 `/images`
 
-### Bulk Images
+### Images Bulk
 `/images/bulk`
+
+### Image By
+`/images/by/{key}/{value}`
+
+Parameters:
+- `key`: The key to search by
+- `value`: The value to search for
+
+## Files
+
+### File
+`/files/{fileId}`
+
+Parameters:
+- `fileId`: The file ID
 
 ## Pastes
 
@@ -174,16 +207,19 @@ Parameters:
 Parameters:
 - `domainId`: The domain ID
 
-## User Random Domains
+### Domains Discover
+`/domains/discover`
 
-### User Random Domains
-`/userRandomDomains`
+## Random Domains
 
-### User Random Domain
-`/userRandomDomains/{userRandomDomainId}`
+### Random Domains
+`/randomDomains`
+
+### Random Domain
+`/randomDomains/{randomDomainId}`
 
 Parameters:
-- `userRandomDomainId`: The user random domain ID
+- `randomDomainId`: The user random domain ID
 
 ## Confirmations
 
@@ -222,6 +258,12 @@ Parameters:
 Parameters:
 - `folderId`: The folder ID
 
+### Folder Content
+`/folders/{folderId}/content`
+
+Parameters:
+- `folderId`: The folder ID
+
 ## Shares
 
 ### Share
@@ -232,6 +274,18 @@ Parameters:
 
 ### Content By Share Code Folder
 `/{contentType}/by/shareCode/{shareCode}/folder`
+
+### Share OEmbed
+`/shares/{shareCode}/oembed`
+
+Parameters:
+- `shareCode`: The share code
+
+### Share Meta
+`/shares/{shareCode}/meta`
+
+Parameters:
+- `shareCode`: The share code
 
 Parameters:
 - `contentType`: The content type as plural ("images", "pastes", etc.)
@@ -287,7 +341,7 @@ Parameters:
 
 ## Subscriptions
 
-### Redeem Subscription Code
+### Subscription Code Redeem
 `/subscriptions/redeem`
 
 ### Subscriptions
@@ -332,3 +386,24 @@ Parameters:
 
 Parameters:
 - `permissionGroupId`: The permission group ID
+
+## Locales
+
+### Locales
+`/locales`
+
+### Locale
+`/locales/{localeId}`
+
+Parameters:
+- `localeId`: The locale ID
+
+## Subscription Codes
+
+### Subscription Codes Bulk
+`/subscriptionCodes/bulk`
+
+## Endpoints
+
+### Endpoints
+`/endpoints`
