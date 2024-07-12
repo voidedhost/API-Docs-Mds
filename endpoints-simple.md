@@ -207,6 +207,12 @@ Parameters:
 Parameters:
 - `domainId`: The domain ID
 
+### Domain Nameservers
+`/domains/{domainId}/nameservers`
+
+Parameters:
+- `domainId`: The domain ID
+
 ### Domains Discover
 `/domains/discover`
 
