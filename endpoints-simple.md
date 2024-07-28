@@ -116,6 +116,27 @@ Parameters:
 Parameters:
 - `userId`: The user ID
 
+### User Notifications
+`/users/{userId}/notifications`
+
+Parameters:
+- `userId`: The user ID
+
+### User Sessions
+`/users/{userId}/sessions`
+
+Parameters:
+- `userId`: The user ID
+
+### User Stats
+`/users/{userId}/stats`
+
+Parameters:
+- `userId`: The user ID
+
+### Bulk Users
+`/users/bulk`
+
 ## Badges
 
 ### Badges
@@ -239,6 +260,12 @@ Parameters:
 
 ### Reports
 `/reports`
+
+### Report
+`/report/{reportId}`
+
+Parameters:
+- `reportId`: The report ID
 
 ## Feedbacks
 
@@ -406,8 +433,18 @@ Parameters:
 
 ## Subscription Codes
 
-### Subscription Codes Bulk
+### Bulk Subscription Codes
 `/subscriptionCodes/bulk`
+
+## Sessions
+
+### Sessions Bulk
+`/sessions/bulk`
+
+## Badge Codes
+
+### Bulk Badge Codes
+`/badgeCodes/bulk`
 
 ## Endpoints
 
