@@ -55,6 +55,12 @@ Parameters:
 - `userId`: The user ID
 - `connection`: The connection type (discord, etc.)
 
+### User Connection Discord Refresh Roles
+`/users/{userId}/connections/discord/refreshRoles`
+
+Parameters:
+- `userId`: The user ID
+
 ### User Folders
 `/users/{userId}/folders`
 
@@ -450,3 +456,11 @@ Parameters:
 
 ### Endpoints
 `/endpoints`
+
+## Redirect
+
+### Redirect
+`/redirect/{string}`
+
+Parameters:
+- `string`: The redirection string
