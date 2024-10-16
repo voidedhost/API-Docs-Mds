@@ -6,12 +6,13 @@ To access a specific version of the API, you can include the version number in t
 
 | Version | Status       | Default |
 |---------|--------------|---------|
-| 2       | Available    |         |
-| 1       | Deprecated   | ✓       |
+| 2       | Available    | ✓       |
+| 1       | Discontinued   |         |
 
 ## Tags
 
 - **Default:** It is the default version if no version is specified in the URL.
 
+- **Available:** This version is available and working.
 - **Deprecated:** This version is no longer actively maintained and is considered deprecated.
-- **Current:** This is the current version of our API and is actively supported and maintained.
+- **Discontinued:** This version is discontinued and no longer able to process requests
