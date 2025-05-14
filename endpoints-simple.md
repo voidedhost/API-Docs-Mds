@@ -104,6 +104,12 @@ Parameters:
 Parameters:
 - `userId`: The user ID
 
+### Redeem User Subscription
+`/users/{userId}/subscriptions/redeem`
+
+Parameters:
+- `userId`: The user ID
+
 ### User Infractions
 `/users/{userId}/infractions`
 
@@ -137,11 +143,41 @@ Parameters:
 ### User Stats
 `/users/{userId}/stats`
 
+### User Award Assignments
+`/users/{userId}/awardAssignments`
+
+Parameters:
+- `userId`: The user ID
+
+### User Items
+`/users/{userId}/items`
+
+Parameters:
+- `userId`: The user ID
+
+### User Purchases
+`/users/{userId}/purchases`
+
+Parameters:
+- `userId`: The user ID
+
+### User Likes
+`/users/{userId}/likes`
+
+Parameters:
+- `userId`: The user ID
+
+### Download User Images
+`/users/{userId}/images/download`
+
 Parameters:
 - `userId`: The user ID
 
 ### Bulk Users
 `/users/bulk`
+
+### Staff Users
+`/users/staff`
 
 ## Badges
 
@@ -155,6 +191,12 @@ Parameters:
 
 ### Languages
 `/languages`
+
+### Language
+`/languages/{languageId}`
+
+Parameters:
+- `languageId`: The language ID
 
 ## Paste Highlights
 
@@ -190,6 +232,9 @@ Parameters:
 Parameters:
 - `fileId`: The file ID
 
+### Files
+`/files`
+
 ## Pastes
 
 ### Paste
@@ -197,6 +242,16 @@ Parameters:
 
 Parameters:
 - `pasteId`: The paste ID
+
+### Pastes
+`/pastes`
+
+### Paste Content
+`/pastes/{pasteId}/content`
+
+Parameters:
+- `pasteId`: The paste ID
+
 
 ## General Uploads
 
@@ -262,6 +317,12 @@ Parameters:
 Parameters:
 - `confirmationType`: The confirmation type (email, password, etc.)
 
+### Resend Confirmation
+`/confirmations/{confirmationType}/resend`
+
+Parameters:
+- `confirmationType`: The confirmation type (email, password, etc.)
+
 ## Reports
 
 ### Reports
@@ -278,13 +339,13 @@ Parameters:
 ### Feedbacks
 `/feedbacks`
 
-## Password Reset
+## Password Resets
 
-### Password Reset
-`/passwordReset`
+### Password Resets
+`/passwordResets`
 
-### Send Password Reset
-`/passwordReset/send`
+### Reset Password 
+`/passwordResets/reset`
 
 ## Folders
 
@@ -305,6 +366,12 @@ Parameters:
 
 ## Shares
 
+### Shares
+`/shares`
+
+### Bulk Shares
+`/shares/bulk`
+
 ### Share
 `/shares/{shareCode}`
 
@@ -313,6 +380,10 @@ Parameters:
 
 ### Content By Share Code Folder
 `/{contentType}/by/shareCode/{shareCode}/folder`
+
+Parameters:
+- `contentType`: The content type as plural ("images", "pastes", etc.)
+- `shareCode`: The share code
 
 ### Share OEmbed
 `/shares/{shareCode}/oembed`
@@ -326,8 +397,10 @@ Parameters:
 Parameters:
 - `shareCode`: The share code
 
+### Review Share
+`/shares/{shareCode}/review`
+
 Parameters:
-- `contentType`: The content type as plural ("images", "pastes", etc.)
 - `shareCode`: The share code
 
 ## Authentication
@@ -426,6 +499,15 @@ Parameters:
 Parameters:
 - `permissionGroupId`: The permission group ID
 
+### Permission Groups Users
+`/permissionGroups/users`
+
+### Permission Group Users
+`/permissionGroups/{permissionGroupId}/users`
+
+Parameters:
+- `permissionGroupId`: The permission group ID
+
 ## Locales
 
 ### Locales
@@ -437,6 +519,9 @@ Parameters:
 Parameters:
 - `localeId`: The locale ID
 
+### Report Missing Locale
+`/locales/report-missing`
+
 ## Subscription Codes
 
 ### Bulk Subscription Codes
@@ -446,6 +531,12 @@ Parameters:
 
 ### Sessions Bulk
 `/sessions/bulk`
+
+### Session
+`/sessions/{sessionId}`
+
+Parameters:
+- `sessionId`: The session ID
 
 ## Badge Codes
 
@@ -457,10 +548,67 @@ Parameters:
 ### Endpoints
 `/endpoints`
 
-## Redirect
+## Redirects
 
 ### Redirect
 `/redirect/{string}`
 
 Parameters:
 - `string`: The redirection string
+
+## Stats
+
+### Stats
+`/stats`
+
+## Testimonials
+
+### Testimonials
+`/testimonials`
+
+## Levels
+
+### Levels
+`/levels`
+
+### Claim Level
+`/levels/claim`
+
+## Awards
+
+### Awards
+`/awards`
+
+### Claim Award
+`/awards/claim`
+
+## Products
+
+### Products
+`/products`
+
+## Items
+
+### Items
+`/items`
+
+## Purchases
+
+### Purchases
+`/purchases`
+
+## Likes
+
+### Likes
+`/likes`
+
+## Like
+`/likes/{likeId}`
+
+Parameters:
+- `likeId`: The like ID
+
+## Award Stages
+
+### Award Stages
+`/awardStages`
